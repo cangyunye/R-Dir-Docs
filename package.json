@@ -1,0 +1,16 @@
+{
+  "name": "r-dir-docs",
+  "private": true,
+  "packageManager": "pnpm@12.4.2",
+  "scripts": {
+    "dev": "vitepress dev site",
+    "build": "vitepress build site",
+    "preview": "vitepress preview site"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild"]
+  }
+}
