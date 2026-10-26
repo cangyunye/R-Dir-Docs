@@ -1,3 +1,7 @@
+---
+pageClass: shots-wide
+---
+
 # 功能演示截图
 
 以下截图均来自 R-Dir v0.33.0（Windows），基于真实项目目录实拍。

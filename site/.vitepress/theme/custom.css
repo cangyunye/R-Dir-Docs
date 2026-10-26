@@ -1,0 +1,36 @@
+/* 演示画廊页（shots.md pageClass）加宽正文：688px 默认太窄，1600 逻辑像素的截图压到 43% 显得发虚。
+   VitePress 的 --vp-layout-max-width(1440px) 在外层罩住 VPDoc，需一并放开 */
+.shots-wide {
+  --vp-layout-max-width: 100%;
+}
+.shots-wide .VPDoc .container,
+.shots-wide .VPDoc.has-aside .container {
+  max-width: none !important;
+}
+.shots-wide .VPDoc .content-container,
+.shots-wide .VPDoc.has-aside .content-container {
+  max-width: 1480px !important;
+}
+
+/* 截图可点击放大 */
+.vp-doc img {
+  cursor: zoom-in;
+}
+
+/* 灯箱 */
+.rdir-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.82);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+}
+.rdir-lightbox img {
+  max-width: 97vw;
+  max-height: 97vh;
+  border-radius: 6px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+}
