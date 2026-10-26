@@ -13,6 +13,9 @@ hero:
       text: 功能演示
       link: /shots
     - theme: alt
+      text: 快捷键速查
+      link: /keys
+    - theme: alt
       text: 下载安装包
       link: https://github.com/cangyunye/R-Dir/releases
 

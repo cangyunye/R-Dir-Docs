@@ -13,6 +13,7 @@ export default defineConfig({
     nav: [
       { text: "使用指南", link: "/guide" },
       { text: "功能演示", link: "/shots" },
+      { text: "快捷键速查", link: "/keys" },
       { text: "下载", link: "https://github.com/cangyunye/R-Dir/releases" },
       { text: "GitHub", link: "https://github.com/cangyunye/R-Dir" },
     ],
@@ -23,6 +24,7 @@ export default defineConfig({
           { text: "简介与亮点", link: "/" },
           { text: "使用指南", link: "/guide" },
           { text: "功能演示截图", link: "/shots" },
+          { text: "快捷键速查", link: "/keys" },
         ],
       },
     ],
