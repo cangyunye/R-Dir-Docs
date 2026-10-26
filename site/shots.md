@@ -178,3 +178,19 @@ QuickJump 快速定位——列表聚焦时键入即搜，fzf 式子序列匹配
 ![设置 → 打开方式：Edge(html/htm)、VS Code(py)、Zed(md) 三条扩展名关联](/shots/38-settings-openers.png)
 
 设置 → 打开方式——扩展名关联管理：每个应用可挂多个后缀（`*` = 所有类型），与常用工具条互不影响。
+
+## 本地 ↔ 远程文件比较
+
+以本地 `F:\pantheon\Project\go-owl` 与远程 `kube@ubuntu2604:/home/kube/go-owl` 两份同一项目为例。
+
+![连接 kube@ubuntu2604，浏览远程 /home/kube/go-owl 项目目录](/shots/39-sftp-goowl-listing.png)
+
+远程项目目录——SFTP 连接后照常浏览 go-owl 源码树，字段 / 排序 / 权限与本地一致。
+
+![右键远程 README.md → 比较 → 与另一文件比较…，填入本地路径](/shots/40-compare-pick-dialog.png)
+
+与另一文件比较——右侧既可从窗格列表点选，也可直接输入本地 / `sftp://` / `http(s)://` 路径。
+
+![文本比较窗口：本地 ↔ 远程 README.md，精确到 +1 −1 行差异，318 行相同自动折叠](/shots/41-text-diff-local-remote.png)
+
+文本比较——行级 diff 左右对照：红 = 左侧删除、绿 = 右侧新增，相同段自动折叠，支持编码切换与「只看差异」。
