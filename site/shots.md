@@ -146,3 +146,35 @@ QuickJump 快速定位——列表聚焦时键入即搜，fzf 式子序列匹配
 ![整理完成的侧边栏：内置 + 自定义快捷访问、预设 + 自定义标签、磁盘、SFTP 分组](/shots/31-sidebar-organized.png)
 
 侧边栏全景——快速访问（内置 + 自定义）、Finder 风格彩色标签（预设 + 自定义）、磁盘 / 卷、SFTP 服务器分组，一屏尽览。
+
+## 打开方式与常用应用
+
+以本机实装应用为例：**VS Code**（F:\Program Files\Microsoft VS Code）、**Zed**（F:\Programs\Zed）、**Microsoft Edge**。
+
+![文件右键菜单第一行：常用工具横排芯片（VC / ZE / ＋），点芯片直接用该应用打开文件或目录](/shots/32-quicktools-file-menu.png)
+
+常用工具条——右键菜单第一行横排芯片（最多 10 个），文件 = 用该应用打开文件，目录 = 作为工作区打开当前目录。
+
+![右键 .py → 打开方式展开：VS Code 关联，另有「选择其他应用…」](/shots/33-opener-submenu-py.png)
+
+`.py` 关联 VS Code——「打开方式」点击展开，按扩展名列出关联应用；「选择其他应用…」选完即自动关联并立即打开。
+
+![右键 .html → 打开方式展开：Microsoft Edge](/shots/34-opener-submenu-html.png)
+
+`.html` 关联 Microsoft Edge——网页文件一键进浏览器。
+
+![右键 .md → 打开方式展开：Zed](/shots/35-opener-submenu-md.png)
+
+`.md` 关联 Zed——Markdown 交给顺手的编辑器；扩展名关联互不影响，每个应用可挂多个后缀。
+
+![空白处右键：常用工具条同样在第一行，点芯片即用编辑器打开当前目录](/shots/36-blank-quicktools.png)
+
+空白处右键——工具条芯片直接把**当前目录**作为工作区交给 Zed / VS Code，配合「在此处打开终端」一套连招。
+
+![设置 → 常用工具：VS Code / Zed 已探测到，可排序、删改启动参数](/shots/37-settings-quicktools.png)
+
+设置 → 常用工具——支持启动参数占位符 `{dir}` / `{path}` / `{name}` / `$pwd`，空 = 默认行为（终端类直接在当前目录开窗）。
+
+![设置 → 打开方式：Edge(html/htm)、VS Code(py)、Zed(md) 三条扩展名关联](/shots/38-settings-openers.png)
+
+设置 → 打开方式——扩展名关联管理：每个应用可挂多个后缀（`*` = 所有类型），与常用工具条互不影响。
